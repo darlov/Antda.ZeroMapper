@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMapper", "ZeroMapper\ZeroMapper.csproj", "{180903F1-4C0C-4DAB-A9EE-5ADAE904C194}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZeroMapper.TestConsole", "ZeroMapper.TestConsole\ZeroMapper.TestConsole.csproj", "{E96835E4-707C-483D-86D0-81F2CE9680D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{180903F1-4C0C-4DAB-A9EE-5ADAE904C194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{180903F1-4C0C-4DAB-A9EE-5ADAE904C194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{180903F1-4C0C-4DAB-A9EE-5ADAE904C194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{180903F1-4C0C-4DAB-A9EE-5ADAE904C194}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96835E4-707C-483D-86D0-81F2CE9680D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96835E4-707C-483D-86D0-81F2CE9680D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96835E4-707C-483D-86D0-81F2CE9680D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96835E4-707C-483D-86D0-81F2CE9680D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
