@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Meziantou.Polyfill" Version="1.0.30">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/roslyn4.7/dotnet/cs" Visible="false" />
+    <None Include="$(OutputPath)\$(AssemblyName).Abstractions.dll" Pack="true" PackagePath="analyzers/roslyn4.7/dotnet/cs" Visible="false" />
+    <None Include="$(OutputPath)\$(AssemblyName).Abstractions.dll" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
+    <None Include="$(OutputPath)\$(AssemblyName).Abstractions.xml" Pack="true" PackagePath="lib\netstandard2.0" Visible="true" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Antda.ZeroMapper.Abstractions\Antda.ZeroMapper.Abstractions.csproj" />
+  </ItemGroup>
+</Project>
